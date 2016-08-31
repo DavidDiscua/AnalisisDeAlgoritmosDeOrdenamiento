@@ -1,4 +1,4 @@
-package sorts.Algoritmos;
+package ordenamientodealgoritmos;
 
 import java.text.DecimalFormat;
 import java.util.concurrent.TimeUnit;
@@ -10,6 +10,7 @@ public class main {
         Filler filler = new Filler();
         Sort sort = new Sort();
         
+        
 //		printArray(A, "Original");
 //		System.out.println();
         System.out.println("---------------DIEZ------------");
@@ -18,13 +19,13 @@ public class main {
             int[] A = filler.oneToTen();
             A = filler.shuffle(A);
             long startTime = System.nanoTime();
-            //sort.bubbleSort(A);
+            sort.bubbleSort(A);
             // sort.selectionSort(A);
             //  sort.insertionSort(A);
             // sort.mergeSort(A);
             //sort.radixSort(A);
             // sort.quickSort(A, 0, A.length - 1);
-             sort.heapSort(A);
+           //  sort.heapSort(A);
             long endTime = System.nanoTime();
             long estimatedTime = endTime - startTime;
 
@@ -36,13 +37,13 @@ public class main {
             int[] A = filler.oneToHundred();
             A = filler.shuffle(A);
             long startTime = System.nanoTime();
-            //sort.bubbleSort(A);
+            sort.bubbleSort(A);
             //  sort.selectionSort(A);
             // sort.insertionSort(A);
             // sort.mergeSort(A);
             // sort.radixSort(A);
             // sort.quickSort(A, 0, A.length - 1);
-             sort.heapSort(A);
+            // sort.heapSort(A);
             long endTime = System.nanoTime();
             long estimatedTime = endTime - startTime;
 
@@ -53,13 +54,13 @@ public class main {
             int[] A = filler.oneToThousand();
             A = filler.shuffle(A);
             long startTime = System.nanoTime();
-            // sort.bubbleSort(A);
+             sort.bubbleSort(A);
             // sort.selectionSort(A);
             // sort.insertionSort(A);
             // sort.mergeSort(A);
             //sort.radixSort(A);
             // sort.quickSort(A, 0, A.length - 1);
-             sort.heapSort(A);
+            // sort.heapSort(A);
             long endTime = System.nanoTime();
             long estimatedTime = endTime - startTime;
 
@@ -70,13 +71,13 @@ public class main {
             int[] A = filler.oneToTenThousand();
             A = filler.shuffle(A);
             long startTime = System.nanoTime();
-            // sort.bubbleSort(A);
+             sort.bubbleSort(A);
             // sort.selectionSort(A);
             // sort.insertionSort(A);
             // sort.mergeSort(A);
             // sort.radixSort(A);
             // sort.quickSort(A, 0, A.length - 1);
-             sort.heapSort(A);
+            // sort.heapSort(A);
             long endTime = System.nanoTime();
             long estimatedTime = endTime - startTime;
             System.out.println((long) estimatedTime);
@@ -87,13 +88,13 @@ public class main {
             int[] heapArray = A;
             A = filler.shuffle(A);
             long startTime = System.nanoTime();
-            // sort.bubbleSort(A);
+             sort.bubbleSort(A);
             //sort.selectionSort(A);
             // sort.insertionSort(A);
             // sort.mergeSort(A);
             //  sort.radixSort(A);
             //  sort.quickSort(A, 0, A.length - 1);
-            sort.heapSort(A);
+            //sort.heapSort(A);
             long endTime = System.nanoTime();
             long estimatedTime = endTime - startTime;
 

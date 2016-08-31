@@ -1,4 +1,4 @@
-package sorts.test;
+package ordenamientodealgoritmos;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
